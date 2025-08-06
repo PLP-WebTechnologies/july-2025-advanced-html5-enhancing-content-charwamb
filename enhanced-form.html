@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form</title>
+  <meta name="description" content="A complete HTML5 page with semantic layout, lists, tables, media, and a fully-featured form.">
+</head>
+<body>
+
+  <!-- Header -->
+  <header role="banner">
+    <h1>Enhanced HTML5 Form</h1>
+    <p>This page demonstrates the use of semantic HTML5, structured content, and a complete, accessible form.</p>
+  </header>
+
+  <!-- Main content -->
+  <main role="main">
+
+    <!-- Section: List of Interests -->
+    <section aria-labelledby="interests-heading">
+      <h2 id="interests-heading">User Interests</h2>
+      <p>Here are some common interests selected by users:</p>
+      <ul>
+        <li>Web Development</li>
+        <li>Graphic Design</li>
+        <li>Accessibility</li>
+        <li>UI/UX Design</li>
+        <li>Content Writing</li>
+      </ul>
+    </section>
+
+    <!-- Section: Sample Table -->
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skill Proficiency Table</h2>
+      <table border="1" aria-describedby="table-description">
+        <caption id="table-description">Proficiency levels in key web technologies</caption>
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Proficiency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Intermediate</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section: Media -->
+    <section aria-labelledby="media-heading">
+      <h2 id="media-heading">Media Elements</h2>
+
+      <figure>
+        <img src="https://via.placeholder.com/300x150" alt="Placeholder banner image" width="300" height="150">
+        <figcaption>A sample banner image used for demonstration.</figcaption>
+      </figure>
+
+      <figure>
+        <audio controls>
+          <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Sample audio file for testing media playback.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Section: Enhanced HTML5 Form -->
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading">User Registration Form</h2>
+
+      <form action="#" method="post" aria-label="User Registration Form">
+
+        <!-- Text Inputs -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="e.g., Charity Wambui" required autocomplete="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="e.g., example@email.com" required autocomplete="email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="At least 6 characters" autocomplete="new-password"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Read-only Field -->
+        <label for="userid">User ID (Read-only):</label><br>
+        <input type="text" id="userid" name="userid" value="USR123456" readonly><br><br>
+
+        <!-- Radio Buttons -->
+        <fieldset>
+          <legend>Gender:</legend>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+        </fieldset><br>
+
+        <!-- Checkboxes -->
+        <fieldset>
+          <legend>Select your areas of interest:</legend>
+          <input type="checkbox" id="html" name="interest" value="HTML">
+          <label for="html">HTML</label><br>
+          <input type="checkbox" id="css" name="interest" value="CSS">
+          <label for="css">CSS</label><br>
+          <input type="checkbox" id="js" name="interest" value="JavaScript">
+          <label for="js">JavaScript</label>
+        </fieldset><br>
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+          <option value="">--Select your country--</option>
+          <option value="kenya">Kenya</option>
+          <option value="uganda">Uganda</option>
+          <option value="tanzania">Tanzania</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us something about yourself..." required></textarea><br><br>
+
+        <!-- Submit -->
+        <button type="submit">Submit Form</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 Charity Wambui | HTML5 Enhanced Form Example</p>
+  </footer>
+
+</body>
+</html>
